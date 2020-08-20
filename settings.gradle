@@ -1,0 +1,4 @@
+include ':shared'
+include ':second'
+include ':first'
+rootProject.name = "TheTravisDoubleApp"
