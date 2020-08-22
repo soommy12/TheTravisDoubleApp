@@ -26,8 +26,6 @@ android {
         gnitset {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            applicationIdSuffix ".staging"
-            versionNameSuffix "-staging"
             resValue "string", "app_name", "DoubleApp First Testing"
         }
         release {
