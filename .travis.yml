@@ -7,6 +7,9 @@ before_install:
   - export GRADLE_HOME=$PWD/gradle-6.1.1
   - export PATH=$GRADLE_HOME/bin:$PATH
   - gradle -v
+  - touch $HOME/.android/repositories.cfg
+  - yes | sdkmanager "platforms;android-30"
+  - yes | sdkmanager "build-tools;30.0.2"
 
 #before_script:
 #    - mkdir -p "$ANDROID_HOME/licenses"
@@ -30,8 +33,6 @@ android:
   components:
     - tools
     - platform-tools
-    - build-tools-30.0.2
-    - android-30
 
     # Additional components
     #- extra-google-google_play_services
