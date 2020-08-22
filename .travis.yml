@@ -25,6 +25,7 @@ env:
  global:
    # install timeout in minutes (2 minutes by default)
     - ADB_INSTALL_TIMEOUT=8
+    - FIREBASE_TOKEN=1//0cM6aNxgKy2rVCgYIARAAGAwSNwF-L9Ir772j3s4x9cV2r3VazfXQ4cQZORelPbEU6EE1F47wlyH5q6BASmXbVmzQ7APVx2kZI6M
 
 android:
   components:
