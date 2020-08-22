@@ -1,6 +1,5 @@
 language: android
 dist: trusty
-jdk: oraclejdk8
 
 before_install:
   - wget https://services.gradle.org/distributions/gradle-6.1.1-all.zip
