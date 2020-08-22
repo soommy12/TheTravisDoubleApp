@@ -10,14 +10,11 @@ before_install:
   - touch $HOME/.android/repositories.cfg
   - yes | sdkmanager "platforms;android-30"
   - yes | sdkmanager "build-tools;30.0.2"
-
-#before_script:
-#    - mkdir -p "$ANDROID_HOME/licenses"
-#    - cp ./google-licenses/* "$ANDROID_HOME/licenses/"
     
 before_cache:
   - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
   - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
+
 cache:
   directories:
     - $HOME/.gradle/caches/
@@ -35,7 +32,7 @@ android:
     - platform-tools
 
     # Additional components
-    #- extra-google-google_play_services
+    - extra-google-google_play_services
     #- extra-google-m2repository
     #- extra-android-m2repository
 
@@ -75,5 +72,11 @@ deploy:
   - provider: script
     skip_cleanup: true
     script: ./gradlew assembleProduction
+    on:
+      branch: master
+
+  - provider: firebase
+    token:
+      secure: "ejnynezXd/3AE5UwISlWBiXFaJiu+HK1QmwJEBhYnijSKvbvzWbVC3yb8zFgjHaCOlPhIZmdlHlPXDeOPU/r5RO0vhJjmx/2GDGlr03W1Cb+K590o9lowfXkjd1P1UJQjm7PgpklwZwCvWHejdVoTqoEfAKC0evrjzVXUsVZoISUXSmFkvcjJuTD8ciY6c29nXQSJ8ujPrFOlPwXL36buov3EWvb93V9PzVDWF/Z3UO3GijRSSVpYe/GGnGHLT9DIlILhqcUrduSWUfkYHspE53bT+AjKmt3QmTOctqhtITu07JihutdLAOuisOmWPj3TUEWd3TkYlZnPj9bIfPl0l2IEy16iOI+j4ukwjTZ24E0M4It6/bfC6/FIbpo4wD4M5VRdcMGHrIZYwuMe9dig4nyBq3LsuLZiHUdc02kMMstj1/06UQPuUCUA3s/7Au57mVVEbCG9epc2ArqdGulAJmFb6Y5An+pPvmXDbuegIUtGzf/NnjWHI4bSqNvRlf158dJUaFeMbL7mZoEEKeGCMVwANqPZEgIcJNfrklefHrTvKkLWsar4OLayKKsvaRoEH26/Ksz3Kvvwq9AWOjMkHAocbmV7MNvozfy/AuUuBNXgJpkgzucJHZjUeV+Owgxkx/wfk1j5XO1Dcxfjo+jof1LqdEXOADvS0Viy8EZI7w="
     on:
       branch: master

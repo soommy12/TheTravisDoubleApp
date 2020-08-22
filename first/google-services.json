@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "986119093442",
+    "firebase_url": "https://thetravisdoubleappfirst.firebaseio.com",
+    "project_id": "thetravisdoubleappfirst",
+    "storage_bucket": "thetravisdoubleappfirst.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:986119093442:android:b4d6c1f9d0678bc6814f5b",
+        "android_client_info": {
+          "package_name": "io.spinney.thetravisdoubleapp.first"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "986119093442-are23vckpe5kcb8jq85k9bmejlauf9kb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBca9KX_mttllZu5fiA5pAzsJ-xSLwv8vY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "986119093442-are23vckpe5kcb8jq85k9bmejlauf9kb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
