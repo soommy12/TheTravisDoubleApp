@@ -25,11 +25,14 @@ android {
             resValue "string", "app_name", "DoubleApp First Debug"
         }
         gnitset {
+            applicationIdSuffix ".testing"
+            versionNameSuffix "-testing"
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             resValue "string", "app_name", "DoubleApp First Testing"
         }
         release {
+            versionNameSuffix "-testing"
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             resValue "string", "app_name", "DoubleApp First Staging"
