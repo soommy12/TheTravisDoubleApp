@@ -30,9 +30,9 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             resValue "string", "app_name", "DoubleApp First Testing"
+            signingConfig debug.signingConfig
         }
         release {
-            versionNameSuffix "-testing"
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             resValue "string", "app_name", "DoubleApp First Staging"
