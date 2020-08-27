@@ -60,7 +60,7 @@ deploy:
 
   - provider: script
     skip_cleanup: true
-    script: ./gradlew assembleGnitset
+    script: ./gradlew assembleQaGnitset appDistributionUploadProduction
     on:
       branch: testing
 
@@ -72,7 +72,7 @@ deploy:
 
   - provider: script
     skip_cleanup: true
-    script: ./gradlew assembleProduction appDistributionUploadProduction
+    script: ./gradlew assembleProduction
     on:
       branch: master
 

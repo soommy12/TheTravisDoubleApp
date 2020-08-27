@@ -8,35 +8,6 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:986119093442:android:fef30136f628e9f4814f5b",
-        "android_client_info": {
-          "package_name": "io.spinney.thetravisdoubleapp.first"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "986119093442-are23vckpe5kcb8jq85k9bmejlauf9kb.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyBca9KX_mttllZu5fiA5pAzsJ-xSLwv8vY"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "986119093442-are23vckpe5kcb8jq85k9bmejlauf9kb.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
         "mobilesdk_app_id": "1:986119093442:android:8652bc74fc285956814f5b",
         "android_client_info": {
           "package_name": "io.spinney.thetravisdoubleapp.first.testing"
